@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1>Employee Details</h1>
+  
+
+    <table border="2px">
+        <tr>
+            <th>pk</th>
+            <th>Emp_name</th>
+            <th>dept_no</th>
+            <th>emp_sal</th>
+        </tr>
+        {% for eo in Employee %}
+        <tr>
+            <td>{{eo.pk}}</td>
+            <td>{{eo.emp_name}}</td>
+            <td>{{eo.dept_no}}</td>
+            <td>{{eo.emp_sal}}</td>
+        </tr>
+        {% endfor %}
+    </center>
+    </table>
+</body>
+</html>
